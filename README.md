@@ -1,2 +1,2 @@
-# portfolio_staging
-ポートフォリオサイトのステージング環境
+# portfolio
+MAMAIMOのポートフォリオサイト
