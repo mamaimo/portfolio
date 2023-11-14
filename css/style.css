@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;700;900&display=swap');
 
 /* 基準 */
 /* ブラウザ幅 1366px(100vw), コンテンツ幅 960px(70.2781845vw), 文字16px(1.17130307vw) */
@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: #231815;
     background-color: #fff;
 }
@@ -37,6 +37,10 @@ h2 img {
 
 p {
     line-break: strict; 
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -405,6 +409,45 @@ footer a {
     margin: 24px;
 }
 
+#contact .line-btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact .line-btn-img {
+    height: 50px;
+    border: 0;
+}
+
+#contact .line-qr {
+    width: 21.961932650073206vw;
+    margin: 0 auto;
+}
+
+#sns {
+    text-align: center;
+    padding: 3.51390921vw 0;
+}
+
+#sns p:first-child {
+    margin-bottom: 20px;
+}
+
+#sns .sns-link {
+    height: 40px;
+    margin: 0 20px;
+}
+
+#sns .sns-link:hover {
+    opacity: .7;
+}
+
+#sns .sns-link img {
+    width: auto;
+    height: 100%;
+}
+
 @media (max-width: 767px) {
     /* 基準 */
     /* ブラウザ幅 375px(100vw), コンテンツ幅 335px(89.333333333333333vw), 文字16px(4.266666666666667vw) */
@@ -436,7 +479,7 @@ footer a {
 
     .buttonRound {
         max-width: 85.333333333333333vw;
-        height: 17.066666666666667vw;
+        height: 13vw;
         padding: 2.133333333333333vw 6.4vw;
         border-radius: 8.533333333333333vw;
     }
@@ -651,12 +694,20 @@ footer a {
     }
 
     /* Contact */
-    #contact {
+    #contact, #sns {
         padding: 6.4vw 0;
     }
 
-    #contact p {
+    #contact p, #sns p {
         width: 89.333333333333333vw;
         margin: 4.266666666666667vw auto;
+    }
+
+    /* #contact .line-btn-img {
+        height: 50px;
+    } */
+
+    #contact .line-qr {
+        display: none;
     }
 }
