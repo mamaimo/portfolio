@@ -14,6 +14,8 @@
         <title>Portfolio | MAMAIMO Design</title>
         <meta name="description" content="Webデザイナー MAMAIMO のポートフォリオサイトです。">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
         <link rel="stylesheet" href="css/lightbox2-2.11.4.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="img/favicon_16x16.png" sizes="16x16">
@@ -22,10 +24,6 @@
         <link rel="icon" type="image/png" href="img/favicon_48x48.png" sizes="48x48">
         <link rel="icon" type="image/png" href="img/favicon_64x64.png" sizes="64x64">
         <link rel="icon" type="image/png" href="img/favicon_96x96.png" sizes="96x96">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-        <script src="js/lightbox2-2.11.4.min.js"></script>
-        <script src="js/main.js"></script>
     </head>
     <body>
         <header class="container">
@@ -48,9 +46,45 @@
         </header>
         <section id="works" class="container anchor_sp">
             <h2><img src="img/works_title.png" alt="Works title"></h2>
+            <!-- <div id="slider">
+                <div id="slider_area">
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/imaginary-banner_07_mu.jpg" alt="コンペエントリー作品 映画館 いい夫婦の日 バナー">
+                        <div class="works_list_item_title"><span>コンペエントリー作品</span></div>
+                        <p>【2023年11月Famm卒業生コンペ・バナー部門最エントリー作品】テーマは「いい夫婦の日の認知拡大」。見た人の目に止まる「インパクト」と思わず引き込まれてしまう魅惑的なデザインを心がけて作りました。お題を最重視し「11/22がいい夫婦の日であること」を確実に推すための書体・画像・配置を選びました。「夫婦で映画館に行くと何かある」と思ってもらえるよう試行錯誤しています。整列や余白、ドロップシャドウの向きなど、細部にもこだわった作品です。</p>
+                    </div>
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/imaginary-pd_02_mu.jpg" alt="コンペ受賞作品 スポーツジム キャンペーン LP">
+                        <div class="works_list_item_title"><span>コンペ受賞作品</span></div>
+                        <p>【2023年10月Famm卒業生コンペ・ページデザイン部門最優秀賞🥇受賞作品】テーマは「スポーツジム入会促進」。少し前に投稿しているバナーをクリックした先のページデザインです。個人的に行きたいと思っているピラティス＆スパのあるフィットネスジムをイメージして作成しました。涼しくなってきた運動のシーズンの秋、通いたくなるデザインを追求し、先進的かつ洗練された印象に仕上げました。</p>
+                    </div>
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/pd_timers_01_mu.jpg" alt="株式会社Timers様 架空ピザ店 ホームページ">
+                        <div class="works_list_item_title"><span>株式会社Timers様</span></div>
+                        <p>「レストランやお取り寄せグルメ」のページデザイン作成のご依頼でした。テイクアウト＆デリバリー専門の小さなイタリアンピザのお店をイメージして作成しました。飲食なので清潔感を大切にトマトソースの赤と白のシンプルなデザインに。さりげなくロゴも作成してみています。（Fammスクール保証案件の2件目の作品です）</p>
+                    </div>
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/imaginary-pd_01_mu.jpg" alt="コンペ受賞作品 架空音楽イベント LP">
+                        <div class="works_list_item_title"><span>コンペ受賞作品</span></div>
+                        <p>【2023年7月Fammスクール受講生特別課題・ページデザインスキル枠にて最優秀賞🥇受賞作品】お題は「秋冬の音楽イベント」。キャンプと音楽イベントを融合させた子供から大人まで楽しめる野外イベントをイメージして作成しました。デザインとしてしっかりアウトプットできるまで、設定の作り込みに最も時間を割いた作品です。</p>
+                    </div>
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/flyer_koganeishakyo_01_mu.jpg" alt="小金井市社協様 居場所プロジェクト チラシ">
+                        <div class="works_list_item_title"><span>小金井市社協様</span></div>
+                        <p>縁があり福祉事業のチラシを制作しました。元々wordで簡易的に作成したものを利用されていたためリニューアルをさせていただきました。Facebookにて開催告知をされていましたので、バナーも合わせて作成しています。</p>
+                    </div>
+                    <div class="works_list_item slider-item">
+                        <img src="img/works/banner_timers_01_mu.jpg" alt="株式会社Timers様 Fammスクール バナー">
+                        <div class="works_list_item_title"><span>株式会社Timers様</span></div>
+                        <p>Fammスクール卒業後の実案件1件目のバナー作品です。「明るくポップな感じ」というご希望に合わせて「FammママWebデザイン講座の募集ページに誘導する広告バナー」を作成しました。</p>
+                    </div>
+                </div>
+            </div> -->
+
+
             <div class="works_list">
                 <div class="works_list_item">
-                    <a href="img/works/imaginary-banner_07.jpg" rel="lightbox"><div class="works_list_item_img"><img src="img/works/imaginary-banner_07.jpg" alt="コンペエントリー作品 映画館 いい夫婦の日 バナー"></div></a>
+                    <a href="img/works/imaginary-banner_07.jpg" rel="lightbox"><div class="works_list_item_img"><img src="img/works/imaginary-banner_07_mu.jpg" alt="コンペエントリー作品 映画館 いい夫婦の日 バナー"></div></a>
                     <div class="works_list_item_title"><span>コンペエントリー作品</span></div>
                     <p>【2023年11月Famm卒業生コンペ・バナー部門最エントリー作品】テーマは「いい夫婦の日の認知拡大」。見た人の目に止まる「インパクト」と思わず引き込まれてしまう魅惑的なデザインを心がけて作りました。お題を最重視し「11/22がいい夫婦の日であること」を確実に推すための書体・画像・配置を選びました。「夫婦で映画館に行くと何かある」と思ってもらえるよう試行錯誤しています。整列や余白、ドロップシャドウの向きなど、細部にもこだわった作品です。</p>
                 </div>
@@ -75,7 +109,7 @@
                     <p>縁があり福祉事業のチラシを制作しました。元々wordで簡易的に作成したものを利用されていたためリニューアルをさせていただきました。Facebookにて開催告知をされていましたので、バナーも合わせて作成しています。</p>
                 </div>
                 <div class="works_list_item">
-                    <a href="img/works/banner_timers_01.jpg" rel="lightbox"><div class="works_list_item_img"><img src="img/works/banner_timers_01.jpg" alt="株式会社Timers様 Fammスクール バナー"></div></a>
+                    <a href="img/works/banner_timers_01.jpg" rel="lightbox"><div class="works_list_item_img"><img src="img/works/banner_timers_01_mu.jpg" alt="株式会社Timers様 Fammスクール バナー"></div></a>
                     <div class="works_list_item_title"><span>株式会社Timers様</span></div>
                     <p>Fammスクール卒業後の実案件1件目のバナー作品です。「明るくポップな感じ」というご希望に合わせて「FammママWebデザイン講座の募集ページに誘導する広告バナー」を作成しました。</p>
                 </div>
@@ -157,4 +191,10 @@
         </div>
         <div class="top_img_fade"></div>
     </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lightbox2-2.11.4.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
