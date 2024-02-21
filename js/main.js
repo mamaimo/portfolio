@@ -17,4 +17,21 @@ $(".top_img_fade").imagesLoaded( { background: true }, function() {
 			hamburgerNaviMenu.slideDown();
 		}
 	});
+
+	$('#slider_area').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		responsive: [
+			{
+			  	breakpoint: 768, //767px以下
+					settings: {
+					slidesToShow: 1,
+				},
+			},
+		],
+	});
+
 });
