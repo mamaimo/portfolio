@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #231815;
     background-color: #fff;
 }
@@ -36,7 +36,8 @@ h2 img {
 }
 
 p {
-    line-break: strict; 
+    line-break: strict;
+    text-align: justify;
 }
 
 img {
@@ -299,13 +300,17 @@ footer a {
     margin-bottom: 1.7569546vw;
 }
 
-.works_list_item {
+.works_list_item, .works_list_item_wide {
     position: relative;
     width: 23.4260615vw;
     margin-bottom: 1.7569546vw;
 }
 
-.works_list_item_img {
+.works_list_item_wide {
+    width: 70.2781845vw;
+}
+
+.works_list_item_img, .works_list_item_img_wide{
     position: relative;
     width: 22.1083455vw;
     height: 16.581259150805271vw;
@@ -318,7 +323,7 @@ footer a {
     vertical-align: middle;
 }
 
-.works_list_item_img img {
+.works_list_item_img img, .works_list_item_img_wide img {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -338,7 +343,8 @@ footer a {
 }
 
 .works_list_item_title span {
-    font-size: 1.46412884vw;
+    font-size: 1vw;
+    font-weight: 700;
     line-height: 0.9;
     position: absolute;
     display: block;
@@ -347,10 +353,14 @@ footer a {
     padding: 0 0.87847731vw;
 }
 
-.works_list_item p {
+.works_list_item p, .works_list_item_wide p {
     font-size: 0.8em;
     width: 22.1083455vw;
     margin: 0.58565154vw 0;
+}
+
+.works_list_item_img_wide, .works_list_item_wide p {
+    width: 68.9604685vw;
 }
 
 /* スライダー */
@@ -430,6 +440,25 @@ margin: 0 16px;
     padding-left: 20px;
 }
 
+.badges {
+    list-style: none;
+    display: flex;
+    padding: 1.8vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.32vw;
+}
+
+.badges li {
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    margin-right: 1.8vw;
+}
+
+.badges li img {
+    width: 100%;
+}
+
 /* About */
 #about {
     padding-top: 3.51390921vw;
@@ -480,7 +509,7 @@ margin: 0 16px;
 #contact .line-btn {
     display: block;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 #contact .line-btn-img {
@@ -681,18 +710,23 @@ margin: 0 16px;
         margin-bottom: 4.266666666666667vw;
     }
     
-    .works_list_item {
+    .works_list_item, .works_list_item_wide {
         position: relative;
         width: 100%;
         margin-bottom: 6.4vw;
     }
 
-    .works_list_item_img {
+    .works_list_item_img, .works_list_item_img_wide {
         position: relative;
         width: 89.333333333333333vw;
         height: 67vw;
     }
-    
+
+    .works_list_item_img_wide img {
+        object-fit: cover;
+        height: 100%;
+    }
+
     .works_list_item_title {
         width: 59.733333333333333vw;
         height: 11.2vw;
@@ -701,11 +735,11 @@ margin: 0 16px;
     }
     
     .works_list_item_title span {
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 0 2.666666666666667vw;
     }
     
-    .works_list_item p {
+    .works_list_item p, .works_list_item_wide p {
         font-size: 3.733333333333333vw;
         width: 89.333333333333333vw;
         margin: 1.066666666666667vw auto;
@@ -732,7 +766,7 @@ margin: 0 16px;
     }
 
     .skill_name span {
-        font-size: 1em;
+        font-size: 0.95em;
         padding: 0 2.666666666666667vw;
     }
 
@@ -740,6 +774,15 @@ margin: 0 16px;
         width: 100%;
         margin: 2.133333333333333vw 0 4.266666666666667vw;
         font-size: 3.733333333333333vw;
+    }
+
+    .badges {
+        margin-bottom: 4vw;
+    }
+    
+    .badges li {
+        width: 24vw;
+        height: 24vw;
     }
 
     /* About */
